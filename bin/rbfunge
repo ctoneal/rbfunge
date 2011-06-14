@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+require 'optparse'
+require File.expand_path(File.join(File.dirname(__FILE__), "..", "lib", "rbfunge.rb"))
+
+options = {  }
+op = OptionParser.new do |x|
+	x.banner = "rbfunge <options> <file>"
+	x.separator ""
+	x.on("-h", "Show this message") do
+		puts op
+		exit
+	end
+end
+begin
+	op.parse(ARGV)
+rescue
+	puts "Could not parse command line arguments."
+	exit
+end
+
+if ARGV.length > 0
+	puts "Running file #{ARGV[0]}..."
+	rbf = Rbfunge::Base.new
+	rbf.load_file(ARGV[0])
+end

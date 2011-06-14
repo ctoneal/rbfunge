@@ -16,9 +16,9 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/ctoneal/rbfunge"
   gem.license = "MIT"
   gem.summary = %Q{A Befunge interpreter in Ruby}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.description = %Q{A Befunge interpreter in Ruby}
   gem.email = "ctoneal@gmail.com"
-  gem.authors = ["'Chris"]
+  gem.authors = ["Chris ONeal"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
   #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
