@@ -1,3 +1,8 @@
 = rbfunge
 
+Rbfunge is a Befunge-93 interpreter for Ruby (although I may implement Befunge-98 support later).
 
+== Usage
+
+
+== History
