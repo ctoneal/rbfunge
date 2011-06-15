@@ -51,7 +51,7 @@ module Rbfunge
 		
 		def evaluate_instruction(instruction)
 			if @string_mode and @commands[instruction] != :toggle_string_mode
-				@memory.push instruction
+				@memory.push instruction[0].ord
 			elsif ("0".."9").include? instruction
 				@memory.push instruction.to_i
 			else
@@ -130,7 +130,7 @@ module Rbfunge
 		end
 		
 		def horizontal_if
-			@program.direction = (@memory.pop == 0) ? :right : :left
+			@program.direction = (@memory.pop.to_i == 0) ? :right : :left
 		end
 		
 		def vertical_if
@@ -178,15 +178,15 @@ module Rbfunge
 		end
 		
 		def input_int
-			@memory.push(gets.to_i)
+			@memory.push(STDIN.readline.to_i)
 		end
 		
 		def input_ascii
-			@memory.push(gets[0])
+			@memory.push(STDIN.getc[0].ord)
 		end
 		
 		def quit
-			puts "Exiting..."
+			puts "\nExiting..."
 			throw :quit
 		end
 		

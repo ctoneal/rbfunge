@@ -27,7 +27,8 @@ module Rbfunge
 		
 		# duplicate the top item
 		def dup
-			top = @stack.last
+			top = pop
+			push top
 			push top
 		end
 	end

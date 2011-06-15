@@ -1,8 +1,20 @@
 = rbfunge
 
 Rbfunge is a Befunge-93 interpreter for Ruby (although I may implement Befunge-98 support later).
+Right now it's not so perfect, but I'll keep working on it.
 
 == Usage
 
+To installl rbfunge:
+
+	% gem install rbfunge
+	
+Once rbfunge is installed, you can use it to interpret your Befunge-93 code.
+
+Load a file via the command line:
+
+	% rbfunge test.bf
 
 == History
+
+* 0.1.0 - Initial release.  Pretty unstable.

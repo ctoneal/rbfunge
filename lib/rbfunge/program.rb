@@ -13,7 +13,11 @@ module Rbfunge
 		def load_code(code)
 			line_array = code.split("\n")
 			25.times do
-				@program << pad_line(line_array.shift)
+				line = line_array.shift
+				line = pad_line(line)
+				byte_array = []
+				line.each_byte { |b| byte_array << b}
+				@program << byte_array
 			end
 		end
 		
