@@ -31,6 +31,7 @@ Gem::Specification.new do |s|
     "lib/rbfunge/interpreter.rb",
     "lib/rbfunge/memory_stack.rb",
     "lib/rbfunge/program.rb",
+    "rbfunge.gemspec",
     "test/helper.rb",
     "test/test_rbfunge.rb"
   ]
