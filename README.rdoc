@@ -7,13 +7,13 @@ Right now it's not so perfect, but I'll keep working on it.
 
 To installl rbfunge:
 
-	% gem install rbfunge
-	
+    % gem install rbfunge
+    
 Once rbfunge is installed, you can use it to interpret your Befunge-93 code.
 
 Load a file via the command line:
 
-	% rbfunge test.bf
+    % rbfunge test.bf
 
 == History
 
